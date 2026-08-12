@@ -6,19 +6,14 @@
     <title>Story</title>
 </head>
 <body>
-    
-   
-    <header><div class="container"><nav>
+       <header><div class="container"><nav>
         <ul>
             <li><a href="#">Logo</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#main-content">About</a></li>
+            <li><a href="#Services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
-            
-        
-    </nav></div>
+ </nav></div>
     
     
     </header>
@@ -26,7 +21,7 @@
         <article>
          <h1>🧬 Можно ли хранить данные в ДНК? Будущее биологической памяти</h1>
          <img src="https://images.openai.com/static-rsc-4/qL1Lb-J-_aj_bqFeiIb6B-PmME31U0JkfYKKsEu0iAc_iZBZ-69LGpLqZJHYcwVceKckbwewCQnhzL6H-P2fHxHphx9Ym-nX1iXdU_m0zX1NkXG3oeb9ijMqbiVD07FbHspme9EQFzncOwQL8yqAJdXlZEKYAiqeIHsa-g9V7j0?purpose=inline" alt="ДНК" width="600">
-        <section>
+        <section id="main-content">
            
             <h2>🌍 Введение</h2>
            <p>Каждый день человечество создает огромные объемы информации: фотографии, видеозаписи, научные исследования, сообщения и документы. Современные жесткие диски и облачные серверы постепенно заполняются, поэтому ученые ищут новые способы хранения данных. Одной из самых необычных и перспективных идей является использование молекулы ДНК в качестве носителя информации.
@@ -106,19 +101,26 @@
 
 </article>
 </main>
-    </body>
-    <footer>
-        <h2>If you want to stay with us and help to add information</h2>
-        <input type="email" placeholder="Введите ваш email" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
+    <footer id="Services">
+      
+         <h2>If you want to stay with us and help to add information</h2>
+         <form action="submit_form.php" method="post">
+        <input name="email" type="email" placeholder="Введите ваш email" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
         <button type="submit" style="background-color: #ff0000; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Подписаться</button>
-        <input type="text" placeholder="Введите ваше имя" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
-        <input type="number" placeholder="Введите ваш телефон" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
-        <input type="address" placeholder="Введите ваш адрес" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
-        <input type="date" placeholder="Введите вашу дату рождения" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
-        <input type="password" placeholder="Введите ваш пароль" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
+        <input name="name" type="text" placeholder="Введите ваше имя" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
+        <input name="phone" type="tel" placeholder="Введите ваш телефон" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
+        <input name="address" type="text" placeholder="Введите ваш адрес" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
+        <input name="birthdate" type="date" placeholder="Введите вашу дату рождения" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
+        <input name="password" type="password" placeholder="Введите ваш пароль" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px;">
         <button type="submit" style="background-color: #001aff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
-        <textarea placeholder="Введите ваше сообщение" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px; height: 100px;"></textarea>
+        <textarea name="message" placeholder="Введите ваше сообщение" style="padding: 10px; border: 1px solid #09ff00; border-radius: 4px; width: 250px; height: 100px;"></textarea>
         <button type="submit" style="background-color: #ff00ff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
+         </form>
+        <h2 id="contact">Contact</h2>
+        <a href="mailto:info@example.com">Email Us</a>
+        <a href="tel:+1234567890">Call Us</a>
+        <a href="https://www.example.com">Visit Our Website</a>
     </footer>
-
+  
+</body>
 </html>
